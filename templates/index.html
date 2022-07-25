@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1 style="font-size:60px; text-align: center;background-color: mediumspringgreen;";class="col-md-3">Prediction of Iris Data set</h1>
+        <form action="/predict" method="POST">
+            Sepal Length : <input type = "text", name="sepal_length", placeholder="Sepal Length">&emsp;
+            Sepal Width : <input type = "text", name="sepal_width", placeholder="Sepal Width">&emsp;
+            Petal Length : <input type = "text", name="petal_length", placeholder="Petal Length">&emsp;
+            Petal Width : <input type = "text", name="petal_width", placeholder="Petal Width">&emsp;<br><br>
+            <label style = "font-size:20px ;background-color: antiquewhite;display:block;">class: {{result}}<br><br></label>
+            
+            <input type = "submit", name="predict">
+
+
+        </form>
+    </body>
+
+</html>
